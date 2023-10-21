@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url("img/fon.jpg");
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  height: 102px;
+  background: url("img/menu-fon.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: grey;
+  text-decoration: none;
+  margin: 8px;
+  padding: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+nav ul span {
+  margin: 8px;
+  padding: 16px;
+  background: #3d3d3d;
+  color: white;
+  border-radius: 8px;
+}
+
+nav ul li:hover {
+  background: #3d3d3d;
+  transition: 0.1s;
+  border-radius: 20px;
+}
+
+
+.photo {
+  margin-top: 3%;
+}
+
+main {
+  width: 800px;
+  height: 360px;
+  margin: 0%;
+  border: 1px solid red;
+  position: relative;
+}
+
+main .box1 {
+  width: 250px;
+  height: 250px;
+  background: rgb(170, 10, 10);
+  border-radius: 360px;
+  position: absolute;
+  top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+main .box1:hover {
+  background: #ff0000;
+  box-shadow: 0 0 16px rgba(255, 0, 0, 0.8);
+  transition: 0.2s;
+}
+
+main .box2 {
+  width: 175px;
+  height: 175px;
+  background: green;
+  border-radius: 360px;
+  position: absolute;
+  left: 255px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+main .box2:hover {
+  background: #0ab80a;
+  box-shadow: 0 0 16px rgba(8, 181, 60, 0.8);
+  transition: 0.2s;
+}
+
+main .box3 {
+    width: 100px;
+    height: 100px;
+    background: rgb(179, 28, 66);
+    border-radius: 360px;
+    position: absolute;
+    left: 438px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  main .box3:hover {
+    background: #df3a3a;
+    box-shadow: 0 0 16px rgba(235, 52, 67, 0.8);
+    transition: 0.2s;
+  }
+
+  main .box4 {
+    width: 200px;
+    height: 200px;
+    background: rgb(173, 86, 3);
+    border-radius: 360px;
+    position: absolute;
+    left: 460px;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  main .box4:hover {
+    background: #db8606;
+    box-shadow: 0 0 16px rgba(192, 116, 2, 0.8);
+    transition: 0.2s;
+  }
+
+  main .box5 {
+    width: 150px;
+    height: 150px;
+    background: rgb(212, 183, 14);
+    border-radius: 360px;
+    position: absolute;
+    left: 645px;
+    top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  main .box5:hover {
+    background: #e2cc06;
+    box-shadow: 0 0 16px rgba(199, 186, 3, 0.8);
+    transition: 0.2s;
+  }
+
+  footer 
+  {
+    width: 100%;
+    height: 150px;
+    background: url(img/footer-fon.jpg);
+  }
