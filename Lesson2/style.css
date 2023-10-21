@@ -1,0 +1,192 @@
+/* Connect Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Container */
+.container {
+  width: 1800px;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* Main Content */
+.main__content {
+  padding: 1px;
+  margin: 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Navigation Logo */
+.logo a {
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigation Burger Menu Button */
+.burger-menu__button {
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  background: black;
+  position: relative;
+  z-index: 5;
+  margin-right: 120px;
+  margin-top: 40px;
+}
+
+/* Navigation Burger Menu Image */
+.burger-menu__image {
+  width: 25px;
+  height: 25px;
+}
+
+/* Hero Content Title & Subtitle */
+.main__title {
+  font-size: 68px;
+  font-weight: 800;
+  width: 750px;
+}
+.main__subtitle {
+  width: 650px;
+  opacity: 0.5;
+}
+
+/* Hero Content Right Side Panel */
+body {
+  justify-content: center;
+}
+
+.right-section__image,
+.right-section__overlay,
+.right-section__overlay-Second {
+  width: 600px;
+  height: 100vh;
+  position: relative;
+  background-size: 200%;
+
+  background-position: center center;
+}
+
+.right-section__image {
+  background-image: url("/img/home-sidebar.jpg");
+  position: absolute;
+  z-index: 1;
+}
+
+.right-section__overlay {
+  background-image: url("/img/business-card.png");
+  position: absolute;
+  z-index: 3;
+}
+
+.right-section__overlay-Second {
+  background-image: url("/img/business-card-2.png");
+  z-index: 2;
+}
+
+/* Main Article Section */
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 850px;
+}
+
+.left-item__article {
+  background-color: rgb(228, 228, 228);
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.right-item__article {
+  background-color: rgb(228, 228, 228);
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+article:hover {
+  transform: scale(1.1);
+}
+
+body {
+  display: flex;
+  justify-content: end;
+}
+
+.items {
+  margin-top: -95px;
+}
+
+/* Burger Menu Items */
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  z-index: 4;
+}
+
+.menu-open .menu-overlay {
+  display: block;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__list li {
+  font-size: 46px;
+  font-weight: 700;
+  padding: 20px;
+  color: white;
+  list-style-type: none;
+}
+
+.menu__list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.burger-menu {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  z-index: 101;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.burger-menu.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.burger-menu__image.active {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  content: url("/img/close.png");
+}
